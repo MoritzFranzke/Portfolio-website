@@ -10,3 +10,51 @@ Support Color #2: Light Lavender Blue #C1D2FE
 */
 
 
+body {
+  background-color: #ffffff;
+  font-family: 'Soleil', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.25;
+  color: #000000;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+large {
+  font-family: lemonde-courrier, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4.4em;
+  line-height: 1.375;
+}
+
+h1, h2, h3, h4 {
+  font-family: lemonde-courrier, serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+}
+
+h1 {
+  font-size: 2.4em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
