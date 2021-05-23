@@ -9,6 +9,9 @@ Support Color #1 Shade: #A0B5EB
 Support Color #2: Light Lavender Blue #C1D2FE
 */
 
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-color: #ffffff;
@@ -26,12 +29,13 @@ body {
   }
 }
 
-large {
+.large {
   font-family: lemonde-courrier, serif;
   font-weight: 700;
   font-style: normal;
   font-size: 4.4em;
   line-height: 1.375;
+  margin-bottom: 0;
 }
 
 h1, h2, h3, h4 {
@@ -155,4 +159,53 @@ a:active {
 
 .tertiary-button:active {
   background-color: #A0B5EB;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 16px;
+  display: block;
+  width: 100%;
+}
+
+header {
+  background-color: #E0E9FF;
+  padding: 16px 0px 12px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.row {
+  margin: 24px 0;
+}
+
+#work .row {
+  padding-bottom: 24px;
+  border-bottom: 2px solid #000000;
+}
+
+.large {
+  display: inline;
+  border-bottom: 8px solid #565AC4;
+}
+
+nav {
+  display: inline;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+  float: right;
+}
+
+nav > ul > li {
+    display: inline-block;
+    padding: 0 8px;
+}
+
+.logo {
+  display: inline;
 }
