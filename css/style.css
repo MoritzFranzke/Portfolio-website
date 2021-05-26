@@ -88,14 +88,22 @@ a:active {
   color: #A0B5EB;
 }
 
+.hyperlink {
+  display: inline;
+}
+
 .button {
   display: inline-block;
   background-color: #6D72FA;
   color: #ffffff;
   font-weight: 400;
   padding: 12px;
+  width: 100%;
   border-radius: 4px;
   transition: all 0.3s;
+  margin: 12px 0;
+  text-align: center;
+  max-width: 440px;
 }
 
 .button:hover,
@@ -117,11 +125,15 @@ a:active {
   color: #6D72FA;
   font-weight: 400;
   padding: 12px;
+  width: 100%;
   border-radius: 4px;
   transition: all 0.3s;
   border-style: solid;
   border-width: 2px, 2px, 2px, 2px;
   border-color: #6D72FA;
+  margin: 12px 0;
+  text-align: center;
+  max-width: 440px;
 }
 
 .secondary-button:hover,
@@ -137,16 +149,18 @@ a:active {
   border-color: #565AC4;
 }
 
-
-
 .tertiary-button {
   display: inline-block;
   background-color: #6D72FA;
   color: #ffffff;
   font-weight: 400;
   padding: 8px;
+  width: 100%;
   border-radius: 4px;
   transition: all 0.3s;
+  margin: 12px 0;
+  text-align: center;
+  max-width: 440px;
 }
 
 .tertiary-button:hover,
@@ -168,11 +182,20 @@ a:active {
   width: 100%;
 }
 
+.center-align {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
 header {
-  background-color: #E0E9FF;
   padding: 10px;
   display: flex;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
 }
 
 .row {
@@ -182,11 +205,16 @@ header {
 #work .row {
   padding-bottom: 24px;
   border-bottom: 2px solid #000000;
+  margin-bottom: 36px;
 }
 
 .large {
   display: inline;
   border-bottom: 8px solid #565AC4;
+}
+
+.top-padding-needed {
+    padding: 1em 0 0 0;
 }
 
 nav {
@@ -208,4 +236,29 @@ nav > ul > li {
 
 .logo {
   max-width: 80px;
+}
+
+.social-media-section {
+  align-items: center;
+  width: 100%;
+  display: flex;
+  padding: 24px 0 16px 0;
+}
+
+.behance-icon {
+  max-width: 44px;
+  display: inline;
+  margin: 0 0 0 16px;
+}
+
+.brand-bee {
+  max-width: 128px;
+}
+
+#thanks-for-reading {
+  padding: 56px 0 24px 0;
+}
+
+#hero, #top-section-hcp, #top-section-about {
+  padding: 96px 16px 0px 16px;
 }
