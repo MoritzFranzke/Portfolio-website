@@ -262,3 +262,40 @@ nav > ul > li {
 #hero, #top-section-hcp, #top-section-about {
   padding: 96px 16px 0px 16px;
 }
+
+@media only screen and (min-width: 767px) {
+  .col-md-6
+  {
+    width: 50%;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 16px;
+  }
+  .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  #work h3 {
+    margin-top: 0;
+  }
+  #hero {
+    padding-top: 120px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .col-lg-5 {
+    width: 42%;
+  }
+  .col-lg-7 {
+    width: 58%;
+  }
+  .container  {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
