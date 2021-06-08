@@ -10,19 +10,25 @@
     <title>Sequo Case Study</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/85ea2636c9.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header id="top">
-      <a href="index.html">
-        <img src="img/logo.svg" alt="logo" class="logo"/>
-      </a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <a href="index.html">
+            <img src="img/logo.svg" alt="logo" class="logo"/>
+          </a>
+          <nav>
+            <ul>
+              <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+              <li><a href="index.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
     <main>
       <div id="top-section-hcp" class="container">
