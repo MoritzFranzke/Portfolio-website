@@ -220,6 +220,7 @@ header {
 nav {
   display: inline;
   width: 100%;
+  padding-top: 8px;
 }
 
 nav > ul {
@@ -229,9 +230,32 @@ nav > ul {
   float: right;
 }
 
-nav > ul > li {
-    display: inline-block;
-    padding: 0 8px;
+.navtoggle {
+  display: flex;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li:not(:first-child) {
+  display: none;
+}
+
+.navtoggle li .icon {
+  font-size: 24px;
+}
+
+
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 12px 0;
+  text-align: right;
+}
+
+.navtoggle.responsive li:first-child {
+  padding: 0 0 10px;
 }
 
 .logo {
@@ -259,7 +283,7 @@ nav > ul > li {
   padding: 56px 0 24px 0;
 }
 
-#hero, #top-section-hcp, #top-section-about {
+#hero, #top-section-project, #top-section-about {
   padding: 96px 16px 0px 16px;
 }
 
@@ -277,6 +301,24 @@ nav > ul > li {
       clear: both;
       display: table;
     }
+
+  .navtoggle li:not(:first-child) {
+        display: inline-block;
+      }
+
+  .navtoggle li:first-child {
+            display: none;
+      }
+
+  nav > ul > li {
+        display: inline-block;
+        padding: 0 8px;
+    }
+
+  nav {
+      padding-top: 4px;
+    }
+
   #work h3 {
     margin-top: 0;
   }
