@@ -2,7 +2,7 @@
 Colors used:
 Background: True White #FFFFFF
 Copy: True Black: #000000
-Accent Color: Blueish Amethyst #6D72FA
+Accent Color: Blueish Amethyst #5E63F9
 Accent Color Shade: #565AC4
 Support Color #1: Silver Moon Blue #E0E9FF
 Support Color #1 Shade: #A0B5EB
@@ -14,12 +14,12 @@ Support Color #2: Light Lavender Blue #C1D2FE
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   font-family: 'Soleil', sans-serif;
   font-weight: 400;
   font-style: normal;
   line-height: 1.25;
-  color: #000000;
+  color: #000;
   font-size: 20px;
 }
 
@@ -38,7 +38,10 @@ body {
   margin-bottom: 0;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: lemonde-courrier, serif;
   font-weight: 700;
   font-style: normal;
@@ -67,7 +70,7 @@ img {
 }
 
 a {
-  color: #6D72FA;
+  color: #5e63f9;
   text-decoration: none;
   transition: all 0.3s;
   display: block;
@@ -75,7 +78,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #C1D2FE;
+  color: #c1d2fe;
   text-decoration: underline;
   transition: all 0.3s;
 }
@@ -85,7 +88,7 @@ a {
 }
 
 a:active {
-  color: #A0B5EB;
+  color: #a0b5eb;
 }
 
 .hyperlink {
@@ -94,8 +97,8 @@ a:active {
 
 .button {
   display: inline-block;
-  background-color: #6D72FA;
-  color: #ffffff;
+  background-color: #5e63f9;
+  color: #fff;
   font-weight: 400;
   padding: 12px;
   width: 100%;
@@ -109,28 +112,27 @@ a:active {
 .button:hover,
 .button:focus {
   color: inherit;
-  background-color: #C1D2FE;
-  box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
+  background-color: #c1d2fe;
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2);
   text-decoration: none;
 }
 
 .button:active {
-  background-color: #A0B5EB;
+  background-color: #a0b5eb;
 }
-
 
 .secondary-button {
   display: inline-block;
-  background-color: #ffffff;
-  color: #6D72FA;
+  background-color: #fff;
+  color: #5e63f9;
   font-weight: 400;
   padding: 12px;
   width: 100%;
   border-radius: 4px;
   transition: all 0.3s;
   border-style: solid;
-  border-width: 2px, 2px, 2px, 2px;
-  border-color: #6D72FA;
+  border-width: 2px;
+  border-color: #5e63f9;
   margin: 12px 0;
   text-align: center;
   max-width: 440px;
@@ -138,21 +140,21 @@ a:active {
 
 .secondary-button:hover,
 .secondary-button:focus {
-  color: #ffffff;
-  background-color: #6D72FA;
-  box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  background-color: #5e63f9;
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2);
   text-decoration: none;
 }
 
 .secondary-button:active {
-  background-color: #565AC4;
-  border-color: #565AC4;
+  background-color: #565ac4;
+  border-color: #565ac4;
 }
 
 .tertiary-button {
   display: inline-block;
-  background-color: #6D72FA;
-  color: #ffffff;
+  background-color: #5e63f9;
+  color: #fff;
   font-weight: 400;
   padding: 8px;
   width: 100%;
@@ -166,13 +168,13 @@ a:active {
 .tertiary-button:hover,
 .tertiary-button:focus {
   color: inherit;
-  background-color: #C1D2FE;
-  box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
+  background-color: #c1d2fe;
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2);
   text-decoration: none;
 }
 
 .tertiary-button:active {
-  background-color: #A0B5EB;
+  background-color: #a0b5eb;
 }
 
 /* Layout styling */
@@ -195,7 +197,7 @@ header {
   position: fixed;
   width: 100%;
   background-color: white;
-  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
 }
 
 .row {
@@ -204,17 +206,17 @@ header {
 
 #work .row {
   padding-bottom: 24px;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #000;
   margin-bottom: 36px;
 }
 
 .large {
   display: inline;
-  border-bottom: 8px solid #565AC4;
+  border-bottom: 8px solid #565ac4;
 }
 
 .top-padding-needed {
-    padding: 1em 0 0 0;
+  padding: 1em 0 0;
 }
 
 nav {
@@ -234,7 +236,8 @@ nav > ul {
   display: flex;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -246,12 +249,12 @@ nav > ul {
   font-size: 24px;
 }
 
-
-
-.navtoggle.responsive li {
-  display: block;
-  padding: 12px 0;
-  text-align: right;
+@media only screen and (max-width: 767px) {
+  .navtoggle.responsive li {
+    display: block;
+    padding: 12px 0;
+    text-align: right;
+  }
 }
 
 .navtoggle.responsive li:first-child {
@@ -266,7 +269,7 @@ nav > ul {
   align-items: center;
   width: 100%;
   display: flex;
-  padding: 24px 0 16px 0;
+  padding: 24px 0 16px;
 }
 
 .behance-icon {
@@ -280,48 +283,52 @@ nav > ul {
 }
 
 #thanks-for-reading {
-  padding: 56px 0 24px 0;
+  padding: 56px 0 24px;
 }
 
-#hero, #top-section-project, #top-section-about {
-  padding: 96px 16px 0px 16px;
+#hero,
+#top-section-project,
+#top-section-about {
+  padding: 96px 16px 0;
 }
 
 @media only screen and (min-width: 767px) {
-  .col-md-6
-  {
+  .col-md-6 {
     width: 50%;
   }
+
   [class*="col-"] {
     float: left;
     padding: 16px;
   }
+
   .row::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
+    content: "";
+    clear: both;
+    display: table;
+  }
 
   .navtoggle li:not(:first-child) {
-        display: inline-block;
-      }
+    display: inline-block;
+  }
 
   .navtoggle li:first-child {
-            display: none;
-      }
+    display: none;
+  }
 
   nav > ul > li {
-        display: inline-block;
-        padding: 0 8px;
-    }
+    display: inline-block;
+    padding: 0 8px;
+  }
 
   nav {
-      padding-top: 4px;
-    }
+    padding-top: 4px;
+  }
 
   #work h3 {
     margin-top: 0;
   }
+
   #hero {
     padding-top: 120px;
   }
@@ -331,14 +338,14 @@ nav > ul {
   .col-lg-5 {
     width: 42%;
   }
+
   .col-lg-7 {
     width: 58%;
   }
-  .container  {
+
+  .container {
     max-width: 1200px;
     margin-right: auto;
     margin-left: auto;
   }
 }
-
-/* Here starts the animation experiment */

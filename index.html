@@ -1,118 +1,111 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://use.typekit.net/sbt3eoy.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio Moritz Franzke</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/85ea2636c9.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <header id="top">
-      <div class="container">
-        <div class="navtoggle" id="myNavtoggle">
-          <a href="index.html">
-            <img src="img/logo.svg" alt="logo" class="logo"/>
-          </a>
-          <nav>
-            <ul>
-              <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-              <li><a href="index.html">Work</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-            </ul>
-          </nav>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.typekit.net/sbt3eoy.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio Moritz Franzke</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/85ea2636c9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header id="top">
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html" style="width: 80px">
+          <img src="img/logo.svg" alt="logo" class="logo" />
+        </a>
+        <nav>
+          <ul>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle ()"><i class="fas fa-bars"></i></a></li>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- HERO section starts here -->
+    <div id="hero" class="container">
+      <h1 class="large">Hi there!</h1>
+      <p>
+        I'm Moritz, a UI/UX designer with marketing knowledge.<br>
+        My passion is to create digital products that are full of character.
+      </p>
+    </div>
+    <!-- HERO section ends -->
+    <!-- WORK section starts here -->
+    <div id="work" class="container">
+      <h2 class="top-padding-needed">My Work</h2>
+      <div class="row">
+        <div class="col-md-6 col-lg-7">
+          <img src="img/HCP/HCP-Cover-Picture.png" alt="A vibrant illustration of bees flying from flower to flower in a spring scene">
+        </div>
+        <div class="col-md-6 col-lg-5">
+          <h3>Website Relaunch - Health Care Products</h3>
+          <p>In this management-demanding project, branding and a website-relaunch were married, with the common goal of offering the user a more delightful experience all the while conveying the brand’s values.</p>
+          <div class="center-align">
+            <a href="health-care-products.html" class="button">Have a look</a>
+          </div>
         </div>
       </div>
-    </header>
-    <main>
-      <!-- HERO section starts here -->
-      <div id="hero" class="container">
-        <h1 class="large">Hi there!</h1>
-        <p>
-          I'm Moritz, a UI/UX designer with marketing knowledge.<br>
-          My passion is to create digital products that are full of character.
-        </p>
-      </div>
-      <!-- HERO section ends -->
-      <!-- WORK section starts here -->
-      <div id="work" class="container">
-        <h2 class="top-padding-needed">My Work</h2>
-        <div class="row">
-          <div class="col-md-6 col-lg-7">
-            <picture>
-              <source srcset="img/HCP/HCP-@1/HCP-Cover-Picture-@1.jpg" media="(max-width:767px)">
-              <img src="img/HCP/HCP-@2/HCP-Cover-Picture-@2.jpg" alt="Project Cover Health Care Products">
-            </picture>
-          </div>
-          <div class="col-md-6 col-lg-5">
-            <h3>Website Relaunch - Health Care Products</h3>
-            <p>In this management-demanding project, branding and a website-relaunch were married, with the common goal of offering the user a more delightful experience all the while conveying the brand’s values.</p>
-            <div class="center-align">
-              <a href="health-care-products.html" class="button">Have a look</a>
-            </div>
-          </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-7">
+          <img src="img/Letterline/Letterline-Cover-Picture.png" alt="The App's name 'Letterline' with a calm gradient in the background.">
         </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-7">
-            <picture>
-              <source srcset="img/Letterline/Letterline-@1/Letterline-Cover-Picture-@1.jpg" media="(max-width:767px)">
-              <img src="img/Letterline/Letterline-@2/Letterline-Cover-Picture-@2.jpg" alt="Project Cover Letterline">
-            </picture>
-          </div>
-          <div class="col-md-6 col-lg-5">
-            <h3>Magazine App - Letterline</h3>
-            <p>Combine a great product idea with a clean and functional interface and you get something like Letterline. Well thought-out screen designs and user-centric design solutions define this fun project.</p>
+        <div class="col-md-6 col-lg-5">
+          <h3>Magazine App - Letterline</h3>
+          <p>Combine a great product idea with a clean and functional interface and you get something like Letterline. Well thought-out screen designs and user-centric design solutions define this fun project.</p>
           <div class="center-align">
             <a href="Letterline.html" class="button">Have a look</a>
           </div>
-          </div>
         </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-7">
-            <picture>
-              <source srcset="img/Sequo/Sequo-@1/Sequo-Cover-Picture-@1.jpg" media="(max-width:767px)">
-              <img src="img/Sequo/Sequo-@2/Sequo-Cover-Picture-@2.jpg" alt="Project Cover Sequo">
-            </picture>
-          </div>
-          <div class="col-md-6 col-lg-5">
-            <h3>Online Furniture-Shop - Sequo</h3>
-            <p>An exceptional shopping experience that focuses on satisfying every user-need at the right moment and intuitively.</p>
-            <div class="center-align">
-              <a href="sequo.html" class="button">Have a look</a>
-            </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-7">
+          <img src="img/Sequo/Sequo-Cover-Picture.png" alt="A cozy living room with the Sequo logo in the middle.">
+        </div>
+        <div class="col-md-6 col-lg-5">
+          <h3>Online Furniture-Shop - Sequo</h3>
+          <p>An exceptional shopping experience that focuses on satisfying every user-need at the right moment and intuitively.</p>
+          <div class="center-align">
+            <a href="sequo.html" class="button">Have a look</a>
           </div>
         </div>
       </div>
-      <!-- WORK section ends -->
-    </main>
-    <footer id="contact">
-      <div class="container">
-        <h2>Get in touch</h2>
-        <p>
-          My work inspires you and you've got a great idea you want to discuss with me?
-          I'd be glad to hear from you! <br> Call <a href="tel:+49 17662409450" class="hyperlink">+49 17662409450</a> or send me an eMail.
-        </p>
-        <div class="center-align">
-          <a href="mailto:moritzfranzke@gmail.com?subject=I+love+your+work!+Now+lets+create+something+together&" target="_blank" class="tertiary-button">eMail me</a>
-        </div>
-        <div class="social-media-section">
-          <p>Check out my behance profile</p>
-          <a href="https://www.behance.net/moritzfranzke" target="_blank" class="behance-icon">
-            <img src="img/behance-logo.svg" alt="behance-logo"/>
-          </a>
-        </div>
-        <a href="#hero">Back to top</a>
-        <br>
-        <p>Copyright Moritz Franzke 2021</p>
+    </div>
+    <!-- WORK section ends -->
+  </main>
+  <footer id="contact">
+    <div class="container">
+      <h2>Get in touch</h2>
+      <p>
+        My work inspires you and you've got a great idea you want to discuss with me?
+        I'd be glad to hear from you! <br> Call <a href="tel:+49-17662409450" class="hyperlink">+49 17662409450</a> or send me an eMail.
+      </p>
+      <div class="center-align">
+        <a href="mailto:moritzfranzke@gmail.com?subject=I+love+your+work!+Now+lets+create+something+together&" target="_blank" class="tertiary-button">eMail me</a>
       </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
-  </body>
+      <div class="social-media-section">
+        <p>Check out my behance profile</p>
+        <a href="https://www.behance.net/moritzfranzke" target="_blank" class="behance-icon">
+          <img src="img/behance-logo.svg" alt="behance-logo" />
+        </a>
+      </div>
+      <a href="#hero">Back to top</a>
+      <br>
+      <p>Copyright Moritz Franzke 2021</p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
 </html>
